@@ -161,8 +161,10 @@ class ViewController: UIViewController
             {
                 currentLevel += 1
                 levelMultiplier *= 2
+                exp = 0
                 UserDefaults.standard.set(currentLevel, forKey: "levelReached")
                 UserDefaults.standard.set(levelMultiplier, forKey: "lm")
+                UserDefaults.standard.set(exp, forKey: "expEarned")
             }
             else
             {
